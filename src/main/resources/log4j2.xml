@@ -1,0 +1,12 @@
+<Configuration>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5p]&#x9;[%d{yyyy-MM-dd HH:mm:ss.SSS}]&#x9;[dd.trace_id=%X{dd.trace_id} dd.span_id=%X{dd.span_id}]&#x9;[%m]&#x9;[%C]%n"   />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
